@@ -27,7 +27,7 @@ script:
 # Tasks to perform after the process is successful.
 after_success:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - docker push edwinjay/udagram-api-feed:latest
-  - docker push edwinjay/udagram-api-user:latest
-  - docker push edwinjay/udagram-frontend:latest
-  - docker push edwinjay/reverseproxy:latest
+  - docker push edwinjay/udagram-api-feed:v2
+  - docker push edwinjay/udagram-api-user:v2
+  - docker push edwinjay/udagram-frontend:v2
+  - docker push edwinjay/reverseproxy:v2

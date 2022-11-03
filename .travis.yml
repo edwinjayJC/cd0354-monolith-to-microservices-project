@@ -30,4 +30,4 @@ after_success:
   - docker push edwinjay/udagram-api-feed:latest
   - docker push edwinjay/udagram-api-user:latest
   - docker push edwinjay/udagram-frontend:latest
-  - docker push edwinjay/udagram-reverseproxy:latest
+  - docker push edwinjay/reverseproxy:latest

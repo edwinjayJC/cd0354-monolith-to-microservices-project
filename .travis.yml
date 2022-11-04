@@ -24,7 +24,7 @@ script:
   - docker build -t udagram-frontend ./udagram-frontend
   - docker tag udagram-frontend edwinjay/udagram-frontend:latest
   - docker build -t udagram-api-feed ./udagram-api-feed
-# Tasks to perform after the process is successful.
+# Perform tasks after the process is successful.
 after_success:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - docker push edwinjay/udagram-api-feed:latest
